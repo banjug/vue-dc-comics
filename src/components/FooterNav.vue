@@ -170,7 +170,7 @@ nav {
             padding: 30px 0;
             display: flex;
             > * {
-                margin: 0 20px;
+                margin-right: 20px;
             }
             li {
                 list-style: none;

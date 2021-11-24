@@ -1,7 +1,7 @@
 <template>
     <div class="bg-container">
         <div class="link-cont">
-            <a href="">SIGN-UP NOW!</a>
+            <a class="sign-btn" href="">SIGN-UP NOW!</a>
             <div>
                 <a href="">FOLLOW US</a>
                 <ul>
@@ -63,10 +63,25 @@ export default {
             padding: 50px 0;
             display: flex;
             justify-content: space-between;
+            .sign-btn {
+                border: 2px solid #0282f9;
+                padding: 15px;
+                    color: white;
+                    text-decoration: none;
+            }
             div {
                 display: flex;
+                align-items: center;
+                > a {
+                    color: #0282f9;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                    margin-right: 20px;
+                }
                 li {
                     display: inline-block;
+                    margin-right: 10px;
                 }
             }
         }

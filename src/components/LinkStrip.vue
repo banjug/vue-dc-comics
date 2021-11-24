@@ -54,7 +54,7 @@ export default {
         background-color: #0282f9;
         padding: 50px 0;
         ul {
-            width: 80%;
+            width: 75%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
