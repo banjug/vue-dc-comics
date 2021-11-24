@@ -1,34 +1,10 @@
 <template>
     <section class="link-strip">
         <ul>
-            <li>
+            <li v-for="link, i in links" :key="i">
                 <a href="">
-                    <img src="..\assets\img\buy-comics-digital-comics.png" alt="  ">
-                    DIGITAL COMICS
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="..\assets\img\buy-comics-digital-comics.png" alt="  ">
-                    DIGITAL COMICS
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="..\assets\img\buy-comics-digital-comics.png" alt="  ">
-                    DIGITAL COMICS
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="..\assets\img\buy-comics-digital-comics.png" alt="  ">
-                    DIGITAL COMICS
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="..\assets\img\buy-comics-digital-comics.png" alt="  ">
-                    DIGITAL COMICS
+                    <img src="link.img" alt="  ">
+                    {{link.text}}
                 </a>
             </li>
         </ul>
@@ -38,6 +14,32 @@
 <script>
 export default {
     name: 'LinkStrip',
+    data(){
+        return{
+            links:[
+                {
+                    img: '../assets/img/buy-comics-digital-comics.png',
+                    text: 'DIGITAL COMICS',
+                },
+                {
+                    img: '../assets/img/buy-comics-merchandise.png',
+                    text: 'DC MERCHANDISE',
+                },
+                {
+                    img: '../assets/img/buy-comics-subscriptions.png',
+                    text: 'SUBSCRIPTION',
+                },
+                {
+                    img: '../assets/img/buy-comics-shop-locator.png',
+                    text: 'COMIC SHOP LOCATOR',
+                },
+                {
+                    img: '../assets/img/buy-comics-power-visa.png',
+                    text: 'DC POWER VISA',
+                },
+            ]
+        }
+    }
 }
 </script>
 
