@@ -2,18 +2,21 @@
   <div id="app">
     <Header/>
     <Main/>
+    <LinkStrip/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
+import LinkStrip from './components/LinkStrip.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Main,
+    LinkStrip,
   }
 }
 </script>
