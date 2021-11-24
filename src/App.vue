@@ -3,6 +3,7 @@
     <Header/>
     <Main/>
     <LinkStrip/>
+    <Footer/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import LinkStrip from './components/LinkStrip.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     Header,
     Main,
     LinkStrip,
+    Footer,
   }
 }
 </script>
