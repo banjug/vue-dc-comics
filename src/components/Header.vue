@@ -1,7 +1,7 @@
 <template>
     <header>
         <a href="">
-            <img src="assets/img/dc-logo.png" alt="DC Logo">
+            <img src="../assets/img/dc-logo.png" alt="DC Logo">
         </a>
         <ul>
             <li v-for="link, i in links" :key="i" :class="link.here ? 'active' : '' ">

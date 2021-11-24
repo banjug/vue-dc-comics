@@ -2,8 +2,8 @@
     <section class="link-strip">
         <ul>
             <li v-for="link, i in links" :key="i">
-                <a href="">
-                    <img :src="link.img" :alt="link.text">
+                <a :href="link.url">
+                    <img :src="require(`../assets/img/${link.img}`)" :alt="link.text">
                     {{link.text}}
                 </a>
             </li>
@@ -18,24 +18,29 @@ export default {
         return{
             links:[
                 {
-                    img: './assets/img/buy-comics-digital-comics.png',
+                    img: 'buy-comics-digital-comics.png',
                     text: 'DIGITAL COMICS',
+                    url: '#',
                 },
                 {
-                    img: './assets/img/buy-comics-merchandise.png',
+                    img: 'buy-comics-merchandise.png',
                     text: 'DC MERCHANDISE',
+                    url: '#',
                 },
                 {
-                    img: './assets/img/buy-comics-subscriptions.png',
+                    img: 'buy-comics-subscriptions.png',
                     text: 'SUBSCRIPTION',
+                    url: '#',
                 },
                 {
-                    img: './assets/img/buy-comics-shop-locator.png',
+                    img: 'buy-comics-shop-locator.png',
                     text: 'COMIC SHOP LOCATOR',
+                    url: '#',
                 },
                 {
-                    img: './assets/img/buy-comics-power-visa.png',
+                    img: 'buy-dc-power-visa.svg',
                     text: 'DC POWER VISA',
+                    url: '#',
                 },
             ]
         }

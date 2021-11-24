@@ -6,8 +6,8 @@
                 <a href="">FOLLOW US</a>
                 <ul>
                     <li v-for="link, i in links" :key="i">
-                        <a href="link.url">
-                            <img :src="link.img" :alt="link.alt">
+                        <a :href="link.url">
+                            <img :src="require(`../assets/img/${link.img}`)" :alt="link.alt">
                         </a>
                     </li>
                 </ul>
@@ -23,27 +23,27 @@ export default {
         return{
             links: [
                 {
-                    img: 'assets/img/footer-facebook.png',
+                    img: 'footer-facebook.png',
                     url: '#',
                     alt: 'Facebook'
                 },
                 {
-                    img: 'assets/img/footer-twitter.png',
+                    img: 'footer-twitter.png',
                     url: '#',
                     alt: 'Twitter'
                 },
                 {
-                    img: 'assets/img/footer-youtube.png',
+                    img: 'footer-youtube.png',
                     url: '#',
                     alt: 'YouTube'
                 },
                 {
-                    img: 'assets/img/footer-pinterest.png',
+                    img: 'footer-pinterest.png',
                     url: '#',
                     alt: 'Pinterest'
                 },
                 {
-                    img: 'assets/img/footer-periscope.png',
+                    img: 'footer-periscope.png',
                     url: '#',
                     alt: 'Periscope'
                 },
@@ -57,5 +57,18 @@ export default {
 <style scoped lang="scss">
     .bg-container {
         background-color: #303030;
+        .link-cont {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            div {
+                display: flex;
+                li {
+                    display: inline-block;
+                }
+            }
+        }
     }
 </style>
