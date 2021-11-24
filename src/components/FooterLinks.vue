@@ -66,8 +66,12 @@ export default {
             .sign-btn {
                 border: 2px solid #0282f9;
                 padding: 15px;
-                    color: white;
-                    text-decoration: none;
+                color: white;
+                text-decoration: none;
+                transition: all .2s ease;
+                &:hover {
+                    background-color: #0282f9;
+                }
             }
             div {
                 display: flex;

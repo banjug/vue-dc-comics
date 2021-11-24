@@ -87,10 +87,13 @@ header {
     li {
         display: inline-block;
         margin: 0 15px;
-        padding: 60px 0;
+        transition: all .15s ease;
+        padding: 62px 0;
         a {
+        padding: 62px 0;
             text-decoration: none;
             color: black;
+            font-weight: bold;
         }
         &.active {
             a {

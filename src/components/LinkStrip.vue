@@ -66,7 +66,7 @@ export default {
                     color: white;
                     text-decoration: none;
                     img {
-                        height: 80px;
+                        height: 60px;
                         margin-right: 20px;
                     }
                 }

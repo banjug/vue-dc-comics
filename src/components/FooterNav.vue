@@ -177,8 +177,11 @@ nav {
                     margin: 10px 0;
                     font-size: .8rem;
                 a {
-                    color: white;
+                    color: gray;
                     text-decoration: none;
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }
