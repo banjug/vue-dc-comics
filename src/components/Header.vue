@@ -1,11 +1,11 @@
 <template>
     <header>
         <a href="">
-            <img src="../assets/img/dc-logo.png" alt="DC Logo">
+            <img src="assets/img/dc-logo.png" alt="DC Logo">
         </a>
         <ul>
             <li v-for="link, i in links" :key="i" :class="link.here ? 'active' : '' ">
-                <a href="link.url">{{link.text}}</a>
+                <a :href="link.url">{{link.text}}</a>
             </li>
         </ul>
     </header>
@@ -94,15 +94,15 @@ header {
         }
         &.active {
             a {
-                color: blue;
+                color: #0282f9;
             }
-            border-bottom: 5px solid blue;
+            border-bottom: 5px solid #0282f9;
         }
         &:hover {
             a {
-                color: blue;
+                color: #0282f9;
             }
-            border-bottom: 5px solid blue;
+            border-bottom: 5px solid #0282f9;
         }
     }
 }

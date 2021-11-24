@@ -3,7 +3,7 @@
         <ul>
             <li v-for="link, i in links" :key="i">
                 <a href="">
-                    <img src="link.img" alt="  ">
+                    <img :src="link.img" :alt="link.text">
                     {{link.text}}
                 </a>
             </li>
@@ -18,23 +18,23 @@ export default {
         return{
             links:[
                 {
-                    img: '../assets/img/buy-comics-digital-comics.png',
+                    img: './assets/img/buy-comics-digital-comics.png',
                     text: 'DIGITAL COMICS',
                 },
                 {
-                    img: '../assets/img/buy-comics-merchandise.png',
+                    img: './assets/img/buy-comics-merchandise.png',
                     text: 'DC MERCHANDISE',
                 },
                 {
-                    img: '../assets/img/buy-comics-subscriptions.png',
+                    img: './assets/img/buy-comics-subscriptions.png',
                     text: 'SUBSCRIPTION',
                 },
                 {
-                    img: '../assets/img/buy-comics-shop-locator.png',
+                    img: './assets/img/buy-comics-shop-locator.png',
                     text: 'COMIC SHOP LOCATOR',
                 },
                 {
-                    img: '../assets/img/buy-comics-power-visa.png',
+                    img: './assets/img/buy-comics-power-visa.png',
                     text: 'DC POWER VISA',
                 },
             ]
@@ -46,7 +46,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     .link-strip {
-        background-color: blue;
+        background-color: #0282f9;
         padding: 50px 0;
         ul {
             width: 80%;
