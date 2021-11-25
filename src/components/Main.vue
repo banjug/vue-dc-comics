@@ -1,12 +1,19 @@
 <template>
     <main>
-        <div class="container">content goes here</div>
+        <Jumbotron/>
+        <Comics/>
     </main>
 </template>
 
 <script>
+import Jumbotron from '../components/Jumbotron.vue'
+import Comics from '../components/Comics.vue'
 export default {
     name: 'Main',
+    components: {
+        Jumbotron,
+        Comics,
+    }
 }
 </script>
 
@@ -16,7 +23,6 @@ main {
     background-color: black;
     color: white;
     font-weight: bold;
-    padding: 100px 0;
     .container {
         width: 80%;
         margin: 0 auto;

@@ -90,7 +90,7 @@ header {
         transition: all .15s ease;
         padding: 62px 0;
         a {
-        padding: 62px 0;
+            padding: 62px 0;
             text-decoration: none;
             color: black;
             font-weight: bold;
