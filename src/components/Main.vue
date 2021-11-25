@@ -20,12 +20,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 main {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    .container {
-        width: 80%;
-        margin: 0 auto;
-    }
+    background-color: #1c1c1c;
 }
 </style>
